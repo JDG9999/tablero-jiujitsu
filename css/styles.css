@@ -1,0 +1,203 @@
+body {
+    user-select: none;
+    background-color: #E6E6FA; 
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.cuadro {
+    border: 4px solid black; 
+}
+
+#logo-principal {
+    width: 12.1em;
+    height: 12.1em;
+    margin: 1.05em 0px 1.05em 0px;
+}
+
+.reloj {
+    font-size: 11em;
+}
+
+.reloj-medio {
+    position: relative;
+    top: -15px;
+}
+
+#reloj-minutos-agregar-decena {
+    position: absolute; 
+    left: 4em; 
+    height: 3em; 
+    width: 5.5em;
+}
+
+#reloj-minutos-agregar-unidad {
+    position: absolute; 
+    left: 10em; 
+    height: 3em; 
+    width: 5.5em;
+}
+
+#reloj-minutos-reducir-decena {
+    position: absolute; 
+    top: 11.3em; 
+    left: 4em; 
+    height: 3em; 
+    width: 5.5em;
+}
+
+#reloj-minutos-reducir-unidad {
+    position: absolute; 
+    top: 11.3em;
+    left: 10em; 
+    height: 3em; 
+    width: 5.5em;
+}
+
+#reloj-segundos-agregar-decena {
+    position: absolute; 
+    left: 32em; 
+    height: 3em; 
+    width: 5.5em;
+}
+
+#reloj-segundos-agregar-unidad {
+    position: absolute; 
+    left: 38em; 
+    height: 3em; 
+    width: 5.5em;
+}
+
+#reloj-segundos-reducir-decena {
+    position: absolute; 
+    top: 11.3em;
+    left: 32em; 
+    height: 3em; 
+    width: 5.5em;
+}
+
+#reloj-segundos-reducir-unidad {
+    position: absolute; 
+    top: 11.3em;
+    left: 38em; 
+    height: 3em; 
+    width: 5.5em;
+}
+
+#titulo {
+    font-weight: bold;
+}
+
+#version-tablero {
+    cursor: pointer;
+}
+
+.logo {
+    height: 5em;
+    width: 5em;
+    margin: 2em 0px 1.15em 0px;
+}
+
+.titulo-cuadro {
+    font-size: 1.5em; 
+    font-weight: bold; 
+    margin: 0em; 
+    padding: 0em;
+    height: 100%;
+    width: 100%;
+}
+
+.kimono {
+    background-color: white; 
+    height: 5.05em;
+}
+
+.area-puntos {
+    max-height: 11em; 
+    font-size: 11em; 
+    padding: 0em;
+}
+
+#area-puntos-c2 {
+    background: linear-gradient(90deg, #FFFF33 50%, #009966 50%); 
+    background-size: 100%;
+}
+
+.area-ventajas {
+    background-color:#FFFF33; 
+    max-height: 10em; 
+    font-size: 7em; 
+    padding: 0em;
+}
+
+.area-faltas {
+    background-color:#CC3333; 
+    max-height: 10em; 
+    font-size: 7em; 
+    padding: 0em;
+}
+
+.atributo {
+    margin: 0em;
+    padding: 0em;
+}
+
+.puntos-agregar {
+    position: absolute; 
+    height: 1.43em; 
+    width: 1.805em; 
+    left: 2.525em; 
+    top: 0em;
+}
+
+.puntos-reducir {
+    position: absolute; 
+    height: 1.43em; 
+    width: 1.805em;
+}
+
+.ventajas-faltas-agregar {
+    position: absolute; 
+    height: 1.43em; 
+    width: 1.3em; 
+    left: 2.06em; 
+    top: 0em;
+}
+
+.ventajas-faltas-reducir {
+    position: absolute; 
+    height: 1.43em; 
+    width: 1.3em;
+}
+
+#c1-estado {
+    display: none;
+    position: absolute; 
+    top: 22.8em; 
+    left: 0.3em; 
+    width: 48.2em; 
+    height: 31.8em;
+}
+
+#c2-estado {
+    display: none;
+    position: absolute; 
+    top: 22.8em; 
+    left: 49em; 
+    width: 48.4em; 
+    height: 31.8em;
+}
+
+.victoria-texto {
+    position: absolute; 
+    top: 20%; 
+    color: white; 
+    font-size: 8em;
+}
+
+.desc-texto {
+    position: absolute; 
+    top: 35%; 
+    color: white; 
+    font-size: 8em;
+}
