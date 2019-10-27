@@ -2,174 +2,168 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>TABLERO DE JIU JITSU - WAC TEAM</title>
-	<!-- RESOLUCIÓN: 1366 X 768 -->
+  <title>TABLERO DE JIU JITSU - WAC TEAM</title>
+  <!-- RESOLUCIÓN: 1366 X 768 -->
 
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
 
-	<div class="container-fluid">
-		<div class="row">
+  <div class="container-fluid">
+    <div class="row">
 
-			<!-- LOGO PRINCIPAL -->
-			<div class="col-md-3 cuadro">
-				<img alt="WAC Team" src="recursos/wac.png" id="logo-principal">
-			</div>
+      <!-- LOGO PRINCIPAL -->
+      <div class="col-md-3 cuadro">
+        <img alt="WAC Team" src="recursos/wac.svg" id="logo-principal">
+      </div>
 
-			<!-- RELOJ -->
-			<div class="col-md-6 cuadro">
-				<div class="row">
-					<div class="col-md-5">
-						<h1 id="reloj-minutos" class="reloj">05</h1>
-					</div>
-					<div id="reloj-minutos-agregar-decena"
-						onClick="modificarReloj('minutos', 'decena', 'mas')"> </div>
-					<div id="reloj-minutos-agregar-unidad"
-						onClick="modificarReloj('minutos', 'unidad', 'mas')"> </div>
-					<div id="reloj-minutos-reducir-decena"
-						onClick="modificarReloj('minutos', 'decena', 'menos')"> </div>
-					<div id="reloj-minutos-reducir-unidad"
-						onClick="modificarReloj('minutos', 'unidad', 'menos')"> </div>
-					<div class="col-md-2">
-						<h1 class="reloj reloj-medio">:</h1>
-					</div>
-					<div class="col-md-5">
-						<h1 id="reloj-segundos" class="reloj">00</h1>
-					</div>
-					<div id="reloj-segundos-agregar-decena"
-						onClick="modificarReloj('segundos', 'decena', 'mas')"> </div>
-					<div id="reloj-segundos-agregar-unidad"
-						onClick="modificarReloj('segundos', 'unidad', 'mas')"> </div>
-					<div id="reloj-segundos-reducir-decena"
-						onClick="modificarReloj('segundos', 'decena', 'menos')"> </div>
-					<div id="reloj-segundos-reducir-unidad"
-						onClick="modificarReloj('segundos', 'unidad', 'menos')"> </div>
-				</div>
-			</div>
-
-			<div class="col-md-3 cuadro">
-				<div>
-					<h3 id="titulo">TABLERO DE JIU JITSU</h3>
-					<!-- version -->
-					<h4 id="version-tablero" data-toggle="tooltip" data-placement="bottom"
-						title="Cambiar versión" onClick="cambiarVersion()"> Adultos </h4>
-				</div>
-				<!-- LOGOS -->
-				<div class="row">
-					<div class="col-md-4">
-              <img alt="IBJJF" class="logo" src="recursos/ibjjf.png">
+      <!-- RELOJ -->
+      <div class="col-md-6 cuadro">
+        <div class="row">
+          <div class="col-md-5">
+            <h1 id="reloj-minutos" class="reloj">05</h1>
           </div>
-					<div class="col-md-4">
-						<img alt="Kanji" class="logo" src="recursos/kanji.png">
+          <div id="reloj-minutos-agregar-decena" onClick="modificarReloj('minutos', 'decena', 'mas')"> </div>
+          <div id="reloj-minutos-agregar-unidad" onClick="modificarReloj('minutos', 'unidad', 'mas')"> </div>
+          <div id="reloj-minutos-reducir-decena" onClick="modificarReloj('minutos', 'decena', 'menos')"> </div>
+          <div id="reloj-minutos-reducir-unidad" onClick="modificarReloj('minutos', 'unidad', 'menos')"> </div>
+          <div class="col-md-2">
+            <h1 class="reloj reloj-medio">:</h1>
+          </div>
+          <div class="col-md-5">
+            <h1 id="reloj-segundos" class="reloj">00</h1>
+          </div>
+          <div id="reloj-segundos-agregar-decena" onClick="modificarReloj('segundos', 'decena', 'mas')"> </div>
+          <div id="reloj-segundos-agregar-unidad" onClick="modificarReloj('segundos', 'unidad', 'mas')"> </div>
+          <div id="reloj-segundos-reducir-decena" onClick="modificarReloj('segundos', 'decena', 'menos')"> </div>
+          <div id="reloj-segundos-reducir-unidad" onClick="modificarReloj('segundos', 'unidad', 'menos')"> </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 cuadro">
+        <div>
+          <h3 id="titulo">TABLERO DE JIU JITSU</h3>
+          <!-- version -->
+          <h4 id="version-tablero" data-toggle="tooltip" data-placement="bottom" title="Cambiar versión"
+            onClick="cambiarVersion()"> Adultos </h4>
+        </div>
+        <!-- LOGOS -->
+        <div class="row">
+          <div class="col-md-4">
+            <img alt="IBJJF" class="logo" src="recursos/ibjjf.svg">
           </div>
           <div class="col-md-4">
-              <img alt="WAC" class="logo" src="recursos/wac.png">
-            </div>
-				</div>
-			</div>
-		</div>
+            <img alt="Kanji" class="logo" src="recursos/kanji.svg">
+          </div>
+          <div class="col-md-4">
+            <img alt="WAC" class="logo" src="recursos/wac.svg">
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<!-- COMPETIDOR -->
-		<div class="row">
-			<div class="col-md-6 cuadro">
-				<p class="titulo-cuadro">COMPETIDOR #1</p>
-			</div>
-			<div class="col-md-6 cuadro">
-				<p class="titulo-cuadro">COMPETIDOR #2</p>
-			</div>
-		</div>
+    <!-- COMPETIDOR -->
+    <div class="row">
+      <div class="col-md-6 cuadro">
+        <p class="titulo-cuadro">COMPETIDOR #1</p>
+      </div>
+      <div class="col-md-6 cuadro">
+        <p class="titulo-cuadro">COMPETIDOR #2</p>
+      </div>
+    </div>
 
-		<!-- KIMONOS -->
-		<div class="row">
-			<div id="kimono1" class="col-md-6 cuadro kimono" onClick="cambiarKimono(0)"></div>
-			<div id="kimono2" class="col-md-6 cuadro kimono" onClick="cambiarKimono(1)"></div>
-		</div>
+    <!-- KIMONOS -->
+    <div class="row">
+      <div id="kimono1" class="col-md-6 cuadro kimono" data-toggle="tooltip" 
+      data-placement="top" title="Cambiar kimono" onClick="cambiarKimono(0)"></div>
+      <div id="kimono2" class="col-md-6 cuadro kimono" data-toggle="tooltip" 
+      data-placement="top" title="Cambiar kimono" onClick="cambiarKimono(1)"></div>
+    </div>
 
-		<!-- PUNTOS -->
-		<div class="row">
-			<div class="col-md-6 cuadro">
-				<p class="titulo-cuadro">PUNTOS</p>
-			</div>
-			<div class="col-md-6 cuadro">
-				<p class="titulo-cuadro">PUNTOS</p>
-			</div>
-		</div>
-		<!-- puntos -->
-		<div class="row">
-			<div class="col-md-6 cuadro area-puntos">
-				<div class="puntos-reducir" onClick="modificarPuntuacion(0, 'puntos', -1)"> </div>
-				<p id="c1-puntos" class="atributo">0</p>
-				<div class="puntos-agregar" onClick="modificarPuntuacion(0, 'puntos', 1)"> </div>
-			</div>
-			<div id="area-puntos-c2" class="col-md-6 cuadro area-puntos">
-				<div class="puntos-reducir"	onClick="modificarPuntuacion(1, 'puntos', -1)"> </div>
-				<p id="c2-puntos" class="atributo">0</p>
-				<div class="puntos-agregar" onClick="modificarPuntuacion(1, 'puntos', 1)"> </div>
-			</div>
-		</div>
+    <!-- PUNTOS -->
+    <div class="row">
+      <div class="col-md-6 cuadro">
+        <p class="titulo-cuadro">PUNTOS</p>
+      </div>
+      <div class="col-md-6 cuadro">
+        <p class="titulo-cuadro">PUNTOS</p>
+      </div>
+    </div>
+    <!-- puntos -->
+    <div class="row">
+      <div class="col-md-6 cuadro area-puntos">
+        <div class="puntos-reducir" onClick="modificarPuntuacion(0, 'puntos', -1)"> </div>
+        <p id="c1-puntos" class="atributo">0</p>
+        <div class="puntos-agregar" onClick="modificarPuntuacion(0, 'puntos', 1)"> </div>
+      </div>
+      <div id="area-puntos-c2" class="col-md-6 cuadro area-puntos">
+        <div class="puntos-reducir" onClick="modificarPuntuacion(1, 'puntos', -1)"> </div>
+        <p id="c2-puntos" class="atributo">0</p>
+        <div class="puntos-agregar" onClick="modificarPuntuacion(1, 'puntos', 1)"> </div>
+      </div>
+    </div>
 
-		<!-- VENTAJAS FALTAS -->
-		<div class="row">
-			<div class="col-md-3 cuadro">
-				<p class="titulo-cuadro">VENTAJAS</p>
-			</div>
-			<div class="col-md-3 cuadro">
-				<p class="titulo-cuadro">FALTAS</p>
-			</div>
-			<div class="col-md-3 cuadro">
-				<p class="titulo-cuadro">VENTAJAS</p>
-			</div>
-			<div class="col-md-3 cuadro">
-				<p class="titulo-cuadro">FALTAS</p>
-			</div>
-		</div>
-		<!-- ventajas faltas -->
-		<div class="row">
-			<div class="col-md-3 cuadro area-ventajas">
-				<div class="ventajas-faltas-reducir" onClick="modificarPuntuacion(0, 'ventajas', -1)"> </div>
-				<p id="c1-ventajas" class="atributo">0</p>
-				<div class="ventajas-faltas-agregar" onClick="modificarPuntuacion(0, 'ventajas', 1)"> </div>
-			</div>
-			<div class="col-md-3 cuadro area-faltas">
-				<div class="ventajas-faltas-reducir" onClick="modificarPuntuacion(0, 'faltas', -1)"> </div>
-				<p id="c1-faltas" class="atributo">0</p>
-				<div class="ventajas-faltas-agregar" onClick="modificarPuntuacion(0, 'faltas', 1)"> </div>
-			</div>
-			<div class="col-md-3 cuadro area-ventajas">
-				<div class="ventajas-faltas-reducir" onClick="modificarPuntuacion(1, 'ventajas', -1)"> </div>
-				<p id="c2-ventajas" class="atributo">0</p>
-				<div class="ventajas-faltas-agregar" onClick="modificarPuntuacion(1, 'ventajas', 1)"> </div>
-			</div>
-			<div class="col-md-3 cuadro area-faltas">
-				<div class="ventajas-faltas-reducir" onClick="modificarPuntuacion(1, 'faltas', -1)"> </div>
-				<p id="c2-faltas" class="atributo">0</p>
-				<div class="ventajas-faltas-agregar" onClick="modificarPuntuacion(1, 'faltas', 1)"> </div>
-			</div>
-		</div>
+    <!-- VENTAJAS FALTAS -->
+    <div class="row">
+      <div class="col-md-3 cuadro">
+        <p class="titulo-cuadro">VENTAJAS</p>
+      </div>
+      <div class="col-md-3 cuadro">
+        <p class="titulo-cuadro">FALTAS</p>
+      </div>
+      <div class="col-md-3 cuadro">
+        <p class="titulo-cuadro">VENTAJAS</p>
+      </div>
+      <div class="col-md-3 cuadro">
+        <p class="titulo-cuadro">FALTAS</p>
+      </div>
+    </div>
+    <!-- ventajas faltas -->
+    <div class="row">
+      <div class="col-md-3 cuadro area-ventajas">
+        <div class="ventajas-faltas-reducir" onClick="modificarPuntuacion(0, 'ventajas', -1)"> </div>
+        <p id="c1-ventajas" class="atributo">0</p>
+        <div class="ventajas-faltas-agregar" onClick="modificarPuntuacion(0, 'ventajas', 1)"> </div>
+      </div>
+      <div class="col-md-3 cuadro area-faltas">
+        <div class="ventajas-faltas-reducir" onClick="modificarPuntuacion(0, 'faltas', -1)"> </div>
+        <p id="c1-faltas" class="atributo">0</p>
+        <div class="ventajas-faltas-agregar" onClick="modificarPuntuacion(0, 'faltas', 1)"> </div>
+      </div>
+      <div class="col-md-3 cuadro area-ventajas">
+        <div class="ventajas-faltas-reducir" onClick="modificarPuntuacion(1, 'ventajas', -1)"> </div>
+        <p id="c2-ventajas" class="atributo">0</p>
+        <div class="ventajas-faltas-agregar" onClick="modificarPuntuacion(1, 'ventajas', 1)"> </div>
+      </div>
+      <div class="col-md-3 cuadro area-faltas">
+        <div class="ventajas-faltas-reducir" onClick="modificarPuntuacion(1, 'faltas', -1)"> </div>
+        <p id="c2-faltas" class="atributo">0</p>
+        <div class="ventajas-faltas-agregar" onClick="modificarPuntuacion(1, 'faltas', 1)"> </div>
+      </div>
+    </div>
 
-		<div id="c1-estado">
-			<h1 id="c1-victoria" class="victoria-texto">Victoria por sumisión</h1>
-			<h1 id="c1-desc" class="desc-texto">Descalificado</h1>
-		</div>
+    <div id="c1-estado">
+      <h1 id="c1-victoria" class="victoria-texto">Victoria por sumisión</h1>
+      <h1 id="c1-desc" class="desc-texto">Descalificado</h1>
+    </div>
 
-		<div id="c2-estado">
-			<h1 id="c2-victoria" class="victoria-texto">Victoria por sumisión</h1>
-			<h1 id="c2-desc" class="desc-texto">Descalificado</h1>
-		</div>
+    <div id="c2-estado">
+      <h1 id="c2-victoria" class="victoria-texto">Victoria por sumisión</h1>
+      <h1 id="c2-desc" class="desc-texto">Descalificado</h1>
+    </div>
 
-	</div>
+  </div>
 
-	<script src="js/scripts.js"></script>
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/bootstrap.bundle.min.js"></script>
-	
+  <script src="js/scripts.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>

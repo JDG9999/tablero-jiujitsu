@@ -16,7 +16,7 @@ var competidor = [
         faltas: 0
     }
 ];
-
+// variables del cronómetro
 var ejecucionCronometro = false;
 var decimas = 10;
 var segundos = 0;
@@ -65,27 +65,27 @@ document.onkeydown = document.onkeyup = function (e) {
 
 function actualizarEstadoCompetidores() {
     if (competidor[0].estado == 'sumision') {
-        document.getElementById("c1-estado").style.backgroundColor = "green";
         document.getElementById("c1-victoria").style.display = "block";
         document.getElementById("c1-desc").style.display = "none";
+        document.getElementById("c1-estado").style.backgroundColor = "green";
         document.getElementById("c1-estado").style.display = "block";
     } else if (competidor[0].estado == 'descalificado') {
-        document.getElementById("c1-estado").style.backgroundColor = "gray";
         document.getElementById("c1-victoria").style.display = "none";
         document.getElementById("c1-desc").style.display = "block";
+        document.getElementById("c1-estado").style.backgroundColor = "gray";
         document.getElementById("c1-estado").style.display = "block";
     } else if (competidor[0].estado == 'activo') {
         document.getElementById("c1-estado").style.display = "none";
     }
     if (competidor[1].estado == 'sumision') {
-        document.getElementById("c2-estado").style.backgroundColor = "green";
         document.getElementById("c2-victoria").style.display = "block";
         document.getElementById("c2-desc").style.display = "none";
+        document.getElementById("c2-estado").style.backgroundColor = "green";
         document.getElementById("c2-estado").style.display = "block";
     } else if (competidor[1].estado == 'descalificado') {
-        document.getElementById("c2-estado").style.backgroundColor = "gray";
         document.getElementById("c2-victoria").style.display = "none";
         document.getElementById("c2-desc").style.display = "block";
+        document.getElementById("c2-estado").style.backgroundColor = "gray";
         document.getElementById("c2-estado").style.display = "block";
     } else if (competidor[1].estado == 'activo') {
         document.getElementById("c2-estado").style.display = "none";
@@ -206,7 +206,7 @@ function cambiarKimono(comp) {
 function modificarPuntuacion(comp, atributo, valor) {
     competidor[comp][atributo] += valor;
     escribirPuntuacion();
-    if (atributo == 'faltas') {
+    if (atributo == 'faltas' && valor > 0) {
         verificarFaltas(comp);
     }
 }

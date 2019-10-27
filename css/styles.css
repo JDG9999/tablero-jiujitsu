@@ -108,6 +108,7 @@ body {
 }
 
 .kimono {
+    cursor: pointer;
     background-color: white; 
     height: 5.05em;
 }
