@@ -1,10 +1,14 @@
 # Tablero de Jiujitsu
 
-Este app permite llevar la puntuación en un combate de jiujitsu.
+Esta aplicación permite llevar la puntuación en un combate de jiujitsu.
+
+## Captura de pantalla   
+
+![Imagen de ejemplo del tablero](https://github.com/JDG9999/tablero-jiujitsu/blob/master/recursos/tablero.jpg "Tablero de jiujitsu")
 
 ## Uso
 
-- Abrir con un navegador. Preferiblemente Chrome. Usar pantalla completa para que pueda verse todo el tablero y ajustar a resolución 1366 x 768
+- Abrir con un navegador el archivo `tablero.html`. Preferiblemente Chrome. Usar pantalla completa (`F11` en Chrome) para que pueda verse todo el tablero. Ajustar a resolución 1366 x 768.
 
 - Para ajustar el tiempo en el cronómetro se debe pulsar en el espacio en la parte inferior (para disminuir) y en el espacio en la parte superior (para aumentar) de cada uno de los cuatro dígitos. Cuandro el cronómetro llegue a cero se reproducirá un audio de una bocina.
 
@@ -19,7 +23,6 @@ Este app permite llevar la puntuación en un combate de jiujitsu.
 
 - Para otorgar/remover la victoria al competidor 1, se debe pulsar `1+S`. Para descalificarlo/reactivar se debe pulsar `1+D`. De igual manera se hace con el competidor 2, pulsando `2+S` y `2+D` para otorgar/remover la victoria y descalificarlo/reactivarlo, respectivamente.
 
-## Imagen de ejemplo del tablero   
+## Versión en vivo
 
-![Imagen de ejemplo del tablero](https://github.com/JDG9999/tablero-jiujitsu/blob/master/recursos/tablero.jpg "Tablero de jiujitsu")
-
+La aplicación está desplagada en https://tablero-jiujitsu.herokuapp.com/
