@@ -21,5 +21,5 @@ Este app permite llevar la puntuación en un combate de jiujitsu.
 
 ## Imagen de ejemplo del tablero   
 
-![Imagen de ejemplo del tablero](https://github.com/JDG9999/tablero-jiujitsu/blob/master/recursos/tablero.png "Tablero de jiujitsu")
+![Imagen de ejemplo del tablero](https://github.com/JDG9999/tablero-jiujitsu/blob/master/recursos/tablero.jpg "Tablero de jiujitsu")
 
