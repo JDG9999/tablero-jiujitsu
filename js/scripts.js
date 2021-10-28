@@ -60,35 +60,34 @@ document.onkeydown = document.onkeyup = function (e) {
             competidor[1].estado = 'activo';
         }
     }
-    actualizarEstadoCompetidores();
+    actualizarEstadoCompetidor(0);
+    actualizarEstadoCompetidor(1);
 }
 
-function actualizarEstadoCompetidores() {
-    if (competidor[0].estado == 'sumision') {
-        document.getElementById("c1-victoria").style.display = "block";
-        document.getElementById("c1-desc").style.display = "none";
-        document.getElementById("c1-estado").style.backgroundColor = "green";
-        document.getElementById("c1-estado").style.display = "block";
-    } else if (competidor[0].estado == 'descalificado') {
-        document.getElementById("c1-victoria").style.display = "none";
-        document.getElementById("c1-desc").style.display = "block";
-        document.getElementById("c1-estado").style.backgroundColor = "gray";
-        document.getElementById("c1-estado").style.display = "block";
-    } else if (competidor[0].estado == 'activo') {
-        document.getElementById("c1-estado").style.display = "none";
+function actualizarEstadoCompetidor(comp) {
+    var victoria = "VICTORIA POR SUMISIÓN";
+    var descalificado = "DESCALI&shy;­FICADO";
+    var mensajeCuadro = comp == 0 ? 'mensaje-c1' : 'mensaje-c2'; 
+    var mensaje = comp == 0 ? 'mensaje-texto-c1' : 'mensaje-texto-c2'; 
+    if (competidor[comp].estado == 'sumision') {
+        detenerCronometro();
+        mostrarMensaje();
+        document.getElementById(mensajeCuadro).style.display = "block";
+        document.getElementById(mensajeCuadro).style.border = "10px solid green";
+        document.getElementById(mensaje).innerHTML = victoria;
+        document.getElementById(mensaje).style.color = "green";
+    } else if (competidor[comp].estado == 'descalificado') {
+        detenerCronometro();
+        mostrarMensaje();
+        document.getElementById(mensajeCuadro).style.display = "block";
+        document.getElementById(mensajeCuadro).style.border = "10px solid black";
+        document.getElementById(mensaje).innerHTML = descalificado;
+        document.getElementById(mensaje).style.color = "black";
+    } else if (competidor[comp].estado == 'activo') {
+        ocultarMensajeComp(comp);
     }
-    if (competidor[1].estado == 'sumision') {
-        document.getElementById("c2-victoria").style.display = "block";
-        document.getElementById("c2-desc").style.display = "none";
-        document.getElementById("c2-estado").style.backgroundColor = "green";
-        document.getElementById("c2-estado").style.display = "block";
-    } else if (competidor[1].estado == 'descalificado') {
-        document.getElementById("c2-victoria").style.display = "none";
-        document.getElementById("c2-desc").style.display = "block";
-        document.getElementById("c2-estado").style.backgroundColor = "gray";
-        document.getElementById("c2-estado").style.display = "block";
-    } else if (competidor[1].estado == 'activo') {
-        document.getElementById("c2-estado").style.display = "none";
+    if (competidor[0].estado == 'activo' && competidor[1].estado == 'activo') {
+        ocultarMensaje();
     }
 }
 
@@ -228,7 +227,7 @@ function verificarFaltas(comp) {
             modificarPuntuacion(obtenerRival(comp), 'puntos', 2);
         } else if (competidor[comp].faltas == 4) {
             competidor[comp].estado = 'descalificado';
-            actualizarEstadoCompetidores();
+            actualizarEstadoCompetidor(comp);
         }
     } else if (version == 'Menores') {
         if (competidor[comp].faltas == 2) {
@@ -238,7 +237,7 @@ function verificarFaltas(comp) {
         }
         else if (competidor[comp].faltas == 6) {
             competidor[comp].estado = 'descalificado';
-            actualizarEstadoCompetidores();
+            actualizarEstadoCompetidor(comp);
         }
     }
 }
@@ -246,4 +245,17 @@ function verificarFaltas(comp) {
 function cambiarVersion() {
     version = (version == 'Adultos') ? 'Menores' : 'Adultos';
     document.getElementById('version-tablero').innerHTML = version;
+}
+
+function mostrarMensaje() {
+    document.getElementById('mensaje-fondo').style.display = "flex";
+}
+
+function ocultarMensajeComp(comp) {
+    var mensaje = comp == 0 ? 'mensaje-c1' : 'mensaje-c2'
+    document.getElementById(mensaje).style.display = "none";
+}
+
+function ocultarMensaje() {
+    document.getElementById('mensaje-fondo').style.display = "none";
 }
